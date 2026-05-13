@@ -1,0 +1,17 @@
+global:
+  security:
+    allowInsecureImages: true
+
+image:
+  registry: public.ecr.aws
+  repository: bitnami/mysql
+  tag: 8.4
+
+auth:
+  rootPassword: "rootpassword"
+  database: "my_database"
+
+primary:
+  persistence:
+    enabled: true
+    size: 8Gi
